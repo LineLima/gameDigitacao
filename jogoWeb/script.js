@@ -55,6 +55,17 @@ function mostraPontos() {
 
 function gameOver() {
   alert("Incorreto! Fim de jogo. Pontuação: " + pontos);
+
+  let xhr = new XMLHttpRequest();
+  xhr.open("POST", "salvaPontos.php", true);
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+      console.log(xhr.responseText); // Exibir resposta do servidor (pode ser removido)
+    }
+  };
+  xhr.send("pontuacao=" + pontos);
+
   pontos = 0;
   mostraPalavra();
   mostraPontos();

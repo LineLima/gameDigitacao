@@ -26,6 +26,26 @@
     <button id="restart-button">Reiniciar</button>
 
     <p id="pontuacaoAtual"></p>
+
+    <div id="ranking"> Ranking usuários:
+      <?php include 'ranking.php'; ?>
+      <?php if (!empty($usuarios)) : ?>
+        <ol>
+          <?php
+            $contador = 0;
+            foreach ($usuarios as $usuario) :
+              if ($contador < 5) :
+          ?>
+              <li><?php echo $usuario; ?></li>
+          <?php
+            endif;
+            $contador++;
+        endforeach;
+        ?>
+        </ol>
+      <?php else : ?>
+        <p>Não há pontuações registradas no momento.</p>
+    <?php endif; ?>
   </div>
 
   <a href="logout.php">Sair</a>

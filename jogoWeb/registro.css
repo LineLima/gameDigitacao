@@ -42,7 +42,7 @@ body {
     font-family: inherit;
   }
   
-  button {
+  input[type="submit"] {
     padding: 10px 20px;
     background-color: greenyellow;
     color: black;
@@ -54,6 +54,6 @@ body {
     cursor: pointer;
   }
   
-  button {
+  input[type="submit"] {
     background-color: greenyellow;
   }
