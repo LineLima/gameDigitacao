@@ -6,9 +6,7 @@
   } else {
     echo "<script>window.location = 'login.php'</script>";
   }
-
 ?>
-
 
 
 <!DOCTYPE html>
@@ -20,19 +18,17 @@
 </head>
 <body>
   <div id="container">
-    <h1>Digitation</h1>
-
-    <div id="displayPalavra">
-      <!-- onde a palavra sera exibida -->
-    </div>
+    <h1>Digitation Game</h1>
+    <p>Digite a palavra a seguir: </p>
+    <div id="displayPalavra"></div>
 
     <input type="text" id="campoInput" placeholder="Digite aqui">
     <button id="restart-button">Reiniciar</button>
 
-    <div id="pontuacao">Pontuação: <span id="pontuacaoAtual">0</span></div>
+    <p id="pontuacaoAtual"></p>
   </div>
 
-  <script src="script.js"></script>
   <a href="logout.php">Sair</a>
+  <script src="script.js"></script>
 </body>
 </html>
