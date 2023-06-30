@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $confirmarSenha = $_POST["confirmPassword"];
 
     // Validação dos campos 
+    
     if (empty($nome) || empty($email) || empty($senha) || empty($confirmarSenha)) {
         echo "Por favor, preencha todos os campos.";
     } elseif ($senha != $confirmarSenha) {

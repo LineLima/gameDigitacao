@@ -1,3 +1,5 @@
+<!-- salva a pontuação do usuario atraves da sua sessao no arquivo txt -->
+
 <?php
     session_start();
 

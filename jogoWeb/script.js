@@ -1,3 +1,4 @@
+//script responsável pelo funcionamento do jogo 
 
 let palavras = ["programação", "computador", "linguagem", "terminal", "imagem",
 "internet", "navegador", "windows", "linux", "desenvolvedor", "desenvolvimento",
@@ -57,8 +58,8 @@ function mostraPontos() {
 function gameOver() {
   alert("Incorreto! Fim de jogo. Pontuação: " + pontos);
 
-  let xhr = new XMLHttpRequest();
-  xhr.open("POST", "salvaPontos.php", true);
+  let xhr = new XMLHttpRequest(); //requisição para enviar dados para salvaPontos.php
+  xhr.open("POST", "salvaPontos.php", true); 
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   xhr.onreadystatechange = function () {
     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -90,7 +91,7 @@ let campoInput = document.getElementById("campoInput");
 campoInput.addEventListener("input", checkInput);
 
 
-var restartButton = document.getElementById("restart-button");
+let restartButton = document.getElementById("restart-button");
 restartButton.addEventListener("click", restartGame);
 
 mostraPalavra();
