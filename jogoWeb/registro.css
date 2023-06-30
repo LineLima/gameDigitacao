@@ -57,3 +57,12 @@ body {
   input[type="submit"] {
     background-color: greenyellow;
   }
+
+  a {
+    color: greenyellow;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }

@@ -5,7 +5,8 @@ let palavras = ["programação", "computador", "linguagem", "terminal", "imagem"
 "trabalho", "docente", "projeto", "ensino", "docente", "análise", "usuário", "docente", "discente",
 "programador", "notebook", "processador", "processamento", "computacional", "memória", "informação", "segurança",
 "compilador", "interface", "algoritmo", "firewall", "criptografia", "software", "hardware", "debugging",
-"framework", "nuvem", "data", "dados", "cibersegurança", "automação", "processos", "relacional", "responsividade"];
+"framework", "nuvem", "data", "dados", "cibersegurança", "automação", "processos", "relacional", "responsividade",
+"bug", "vírus", "ransomware", "database", "git", "navegação", "orientação", "digitalização"];
 
 
 let palavraAtual = "";
@@ -26,7 +27,7 @@ function mostraPalavra() {
 
 function checkInput() {
   let campoInput = document.getElementById("campoInput");
-  var usuarioInput = campoInput.value;
+  let usuarioInput = campoInput.value;
 
   for (let i = 0; i < usuarioInput.length; i++) {
     if (usuarioInput[i] !== palavraAtual[i]) {
@@ -61,7 +62,7 @@ function gameOver() {
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   xhr.onreadystatechange = function () {
     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-      console.log(xhr.responseText); // Exibir resposta do servidor (pode ser removido)
+      console.log(xhr.responseText); 
     }
   };
   xhr.send("pontuacao=" + pontos);
