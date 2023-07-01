@@ -7,7 +7,7 @@ let palavras = ["programação", "computador", "linguagem", "terminal", "imagem"
 "programador", "notebook", "processador", "processamento", "computacional", "memória", "informação", "segurança",
 "compilador", "interface", "algoritmo", "firewall", "criptografia", "software", "hardware", "debugging",
 "framework", "nuvem", "data", "dados", "cibersegurança", "automação", "processos", "relacional", "responsividade",
-"bug", "vírus", "ransomware", "database", "git", "navegação", "orientação", "digitalização"];
+"bug", "vírus", "ransomware", "database", "git", "navegação", "orientação", "digitalização","alex"];
 
 
 let palavraAtual = "";
