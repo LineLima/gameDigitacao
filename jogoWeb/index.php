@@ -28,7 +28,7 @@
     <p id="pontuacaoAtual"></p>
 
     <div id="ranking"> Ranking usuários:
-      <?php include 'ranking.php'; ?>
+      <?php include 'ranking.php'; ?> <!--pega os cinco melhores jogadores e mostra em formato de lista -->
       <?php if (!empty($usuarios)) : ?>
         <ol>
           <?php
@@ -47,7 +47,7 @@
         <p>Não há pontuações registradas no momento.</p>
     <?php endif; ?>
   </div>
-
+  
   <a href="logout.php">Sair</a>
   <script src="script.js"></script>
 </body>

@@ -1,3 +1,6 @@
+<!-- conexão com o bd usando php -->
+
+
 <?php
     $server = "localhost";
     $usuario = "root";

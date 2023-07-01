@@ -51,12 +51,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="utf-8">
     <title>Registro</title>
     <link rel="stylesheet" href="registro.css">
+    <script src="validacaoRegistro.js"></script>
 </head>
 
 <body>
     <div class="registro-container">
         <h1>Registro</h1>
-        <form action="registro.php" method="post">
+        <form action="registro.php" method="post" onsubmit ="return validarRegistro();">
             <input type="text" placeholder="Nome de usuário" name="nome" required>
             <input type="email" placeholder="E-mail" name="email" required>
             <input type="password" placeholder="Senha" name="senha" required>
